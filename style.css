@@ -29,22 +29,21 @@ body {
   height: 40px;
 }
 
-/* Video & Canvas */
+/* Video & Canvas (AUTO-ZOOM REMOVED HERE) */
 #video-container {
   position: absolute;
   inset: 0;
   overflow: hidden;
   background: #000;
 }
+
 #webcam,
 #overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ⭐ FULL CAMERA VIEW, NO ZOOM */
+  background: #000;
 }
 
 /* Jewelry category bar */
